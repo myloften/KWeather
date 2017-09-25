@@ -70,7 +70,7 @@ class WeatherActivity : AppCompatActivity() {
      * 根据天气id请求城市天气信息。
      */
     fun requestWeather(weatherId: String?) {
-        val weatherUrl="http://guolin.tech/api/weather?cityid=$weatherId&key=bc0418b57b2d4918819d3974ac1285d9"
+        val weatherUrl="http://guolin.tech/api/weather?cityid=$weatherId&key=d05d9c60ceac479581f6c70fe845c9ab"
         HttpUtil.sendOkHttpRequest(weatherUrl, object : Callback {
             @Throws(IOException::class)
             override fun onResponse(call: Call?, response: Response) {
